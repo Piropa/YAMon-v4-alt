@@ -57,7 +57,7 @@ _bridgeMAC=''                                # mac address in form XX:XX:XX:XX:X
 _defaultGroup='Unknown'                      # default group/owner name for new devices
 _defaultDeviceName='New Device'              # default name for new devices if nothing can be found by the script
 _do_separator='_'                            # a default character that separates the owner and device name in static leases or dnsmasq values, e.g., Al_iPhone (* default ``)
-_doLocalFiles='0'                            # make a local copy of JS, CSS and images: 0->no(*recommended) || 1->yes
+_doLocalFiles='1'                            # make a local copy of JS, CSS and images: 0->no(*recommended) || 1->yes
                                              #   NB - set to 1 if you do not want use the files hosted at my domain (usage-monitoring.com)
                                              #   NB - get the value for this parameter from the settings tab
 _ignoreGateway='1'                           # whether or not to exclude any updates involving your gateway: 0->no(*) || 1->yes

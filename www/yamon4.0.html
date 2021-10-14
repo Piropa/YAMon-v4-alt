@@ -19,23 +19,23 @@
 				path = (localStorage.getItem('devOrCurr') || 'current') + '/'
 				domain='https://usage-monitoring.com/'
 			}
-			$("<link/>", {rel: "stylesheet", type: "text/css", href: domain + path + 'css/normalize.css'}).appendTo("head");
-			$("<link/>", {rel: "stylesheet", type: "text/css", href: domain + path + 'css/yamon' + ver + '.css'}).appendTo("head");
-			$("<link/>", {rel: "shortcut icon",href: domain + path + 'images/favicon.png'}).appendTo("head");
-			$.ajax({url: domain + path + 'js/jquery.md5.min.js', dataType: "script"});
+			$("<link/>", {rel: "stylesheet", type: "text/css", href: 'css/normalize.css'}).appendTo("head");
+			$("<link/>", {rel: "stylesheet", type: "text/css", href: 'css/yamon' + ver + '.css'}).appendTo("head");
+			$("<link/>", {rel: "shortcut icon",href: 'images/favicon.png'}).appendTo("head");
+			$.ajax({url: 'js/jquery.md5.min.js', dataType: "script"});
 		</script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script type="text/javascript">
-			google.charts.load('current', {packages: ['corechart']});
+			google.charts.load('current', {packages: ['corechart', 'gauge']});
 		</script>
 		<script defer type="text/javascript">
 			if(!localStorage.getItem('ajaxCache')) localStorage.setItem('ajaxCache', 'true')
 			$.ajaxSetup({'cache':localStorage.getItem('ajaxCache')=='true'});  //Comment out this line if your router requires timestamps appended to data URLs
 			google.charts.load('current', {'packages':['corechart', 'gauge']});
 			$(document).ready(function(){
-				$.ajax({crossDomain: true, url: domain + path + 'js/util' + ver+ '.js',dataType: "script", cache:false})
+				$.ajax({crossDomain: true, url: 'js/util' + ver+ '.js',dataType: "script", cache:false})
 					.done(function(){
-						$.ajax({crossDomain: true, url: domain + path + 'js/yamon' + ver+ '.js',dataType: "script", cache:false});
+						$.ajax({crossDomain: true, url: 'js/yamon' + ver+ '.js',dataType: "script", cache:false});
 					});
 			})
 		</script>
