@@ -8,6 +8,9 @@
 # See `yamon4.x.js` for more T&C's										 #
 #																		 #
 ##########################################################################
+HISTORY
+4.0.8 (2021-10-21) - include 'eth0' as default LAN interface, after 'br0' and 'br-lan' fail
+4.0.8 (2020-04-02) - changes introduced in 4.0.8
 */
 jQuery.extend (
     jQuery.expr[':'].containsCI = function (a, i, m) {

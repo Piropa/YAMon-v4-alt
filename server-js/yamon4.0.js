@@ -8,8 +8,8 @@
 #																		 #
 ##########################################################################
 HISTORY
-4.0.7 (2021-10-21) - include 'eth0' as default LAN interface, after 'br0' and 'br-lan' fail
-4.0.7 (2020-03-20) - finally got the gauges working on the summary page
+4.0.8 (2021-10-21) - include 'eth0' as default LAN interface, after 'br0' and 'br-lan' fail
+4.0.8 (2020-03-20) - finally got the gauges working on the summary page
 4.0.4 (2019-12-28) - lots of bug fixes
 4.0.0 (2015-11-16) - first iteration with the new features
 
